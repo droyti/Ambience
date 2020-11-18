@@ -1,2 +1,2 @@
 # Ambience
-Work in progress.
+Work in progress mod to be open-sourced upon completion.
