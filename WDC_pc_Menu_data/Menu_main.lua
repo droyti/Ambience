@@ -6,11 +6,10 @@ require("AspectRatio.lua")
 require("MenuUtils.lua")
 require("Menu_JumpScrollList.lua")
 require("Menu_Characters.lua")
-require("Menu_LoadAnyLevel.lua")
 require("Menu_ConceptGallery.lua")
 require("Menu_Music.lua")
 require("Menu_DroytiAmbience.lua")
---local loadAnyLevelStatus, droytiLal = pcall(require, "Menu_loadAnyLevel.lua")
+local loadAnyLevelStatus, droytiLal = pcall(require, "Menu_loadAnyLevel.lua")
 require("Menu_Options.lua")
 require("Menu_Seasons.lua")
 require("Menu_VideoMenu.lua")
@@ -118,14 +117,9 @@ Menu_Main = function()
     Menu_Add(ListButtonLite, "music", "label_music", "Menu_Music()")
     Menu_Add(ListButtonLite, "settings", "label_settings", "Menu_Options()")
     Menu_Add(ListButtonLite, "credits", "label_credits", "Menu_ShowCredits( 0 )")
-    --[[
-    
-    Maybe someone smarter than me can figure out LAL status? Pwetty Pwease?
-    
     if(loadAnyLevelStatus) then
         Menu_Add(ListButtonLite, "loadanylevel", "Load Any Level", "Menu_LoadAnyLevel()")
     end
-    --]]
     Menu_Add(ListButtonLite, "ambience", "Ambience", "Menu_DroytiAmbience()")
     if IsPlatformPC() or IsPlatformMac() then
       Menu_Add(ListButtonLite, "exit", "label_exitGame", "UI_Confirm( \"popup_quit_header\", \"popup_quit_message\", \"EngineQuit()\" )")
