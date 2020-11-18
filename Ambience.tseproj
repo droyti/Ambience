@@ -1,0 +1,11 @@
+{
+  "formatVersion": "1",
+  "tool": {
+    "game": "TTDS"
+  },
+  "mod": {
+    "name": "Ambience",
+    "version": "1.0",
+    "author": "Droyti"
+  }
+}
