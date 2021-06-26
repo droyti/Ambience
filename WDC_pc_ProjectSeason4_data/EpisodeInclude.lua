@@ -71,4 +71,4 @@ if IsToolBuild() then
   require("GameTimer.lua")
   require("KitCharacter.lua")
 end
-
+require("DebugLoader.lua")

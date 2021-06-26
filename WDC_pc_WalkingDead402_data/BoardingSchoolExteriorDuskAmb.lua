@@ -31,6 +31,15 @@ BoardingSchoolExteriorDuskAmb = function()
       AgentSetPosAndRot(Game_GetPlayer(), kStartingPos, kStartingRot)
   end
   
+  if init ~= nil then
+      Ambience_ShowNotification()
+  end
+  
+  CustomSound_Ambient_Setup("soundCustom_ambient", kScene)
+   local amb_mus_soundFile = "tlou_home.mp3"
+   CustomSound_Ambient_SetProperties("soundCustom_ambient", amb_mus_soundFile, 5.0, 1.0, kScene)
+   CustomSound_Ambient_Play("soundCustom_ambient", 0.1, kScene)
+
   Ambience_RemoveVanillaAgents(kScene)
   AmbienceWarps_Init(kScene)
   --AgentSetPos(Game_GetPlayer(), kStartingPos.x, kStartingPos.y, kStartingPos.z)

@@ -6,6 +6,7 @@
   "mod": {
     "name": "Ambience",
     "version": "1.0",
-    "author": "Droyti"
+    "author": "Droyti",
+    "priority": 950
   }
 }

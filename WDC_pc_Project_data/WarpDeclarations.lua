@@ -37,9 +37,10 @@ kWarp_BoardingSchoolExt_GateExit = {}
 kWarp_BoardingSchoolExt_GateExit["ID"] = "warpBoardingSchoolCourtyardExit" --
 kWarp_BoardingSchoolExt_GateExit["Position"] = Vector(-5.129817, 0, 33.923332)
 kWarp_BoardingSchoolExt_GateExit["Radius"] = 1
-kWarp_BoardingSchoolExt_GateExit["Message"] = "[F] - The Woods"
+kWarp_BoardingSchoolExt_GateExit["Message"] = "[F] - Fishing Shack"
 kWarp_BoardingSchoolExt_GateExit["Activate"] = function()
-    DialogBox_Okay("You can't go there... yet.", "Not implemented!")
+    --SubProject_Switch("WalkingDead401", "ForestShackAmb.lua")
+    DialogBox_Okay("I promise, I'm working on it!", "STILL not implemented")
 end
 
 kWarp_BoardingSchoolExt_Dorms = {}

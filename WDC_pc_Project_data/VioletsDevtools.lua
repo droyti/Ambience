@@ -81,7 +81,7 @@ Devtools_InitMenuText = function()
    else
        TextSet(textAgent, menuText)
    end
-   AgentSetPosAndRot("violetsDevtools_Menu_text", camPos, AgentGetWorldRot(devtoolsCamera))
+   --AgentSetPosAndRot("violetsDevtools_Menu_text", camPos, AgentGetWorldRot(devtoolsCamera))
   end
 
   Callback_OnPostUpdate:Add(OnCallbackFired)
